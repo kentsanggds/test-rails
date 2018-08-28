@@ -1,0 +1,11 @@
+---
+buildpack: ruby_buildpack
+memory: 128MB
+instances: 2
+env:
+  METRICS_BASIC_AUTH: false
+services:
+  - gds-prometheus
+
+applications:
+  - name: test-rails
